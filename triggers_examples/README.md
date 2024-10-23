@@ -1,6 +1,6 @@
 # Создание триггеров в PostgreSQL
 ## Синтаксис
-### [Триггеры](create_trigger.sql)
+### [Триггеры](triggers_examples.sql)
 ```sql
 CREATE [ OR REPLACE ] [ CONSTRAINT ] TRIGGER name { BEFORE | AFTER | INSTEAD OF } { event [ OR ... ] }
     ON table_name
