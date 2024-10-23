@@ -6,3 +6,5 @@
 - [Документация](Documentation.docx)
 ## Работы
 1. [Создание базы данных "Сессия"](/creating_database/README.md)
+2. [Создание правил и представлений](rules_defaults_views/README.md)
+3. [Создание триггеров](triggers_examples/README.md)
