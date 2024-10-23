@@ -11,7 +11,7 @@ CREATE [ OR REPLACE ] [ CONSTRAINT ] TRIGGER name { BEFORE | AFTER | INSTEAD OF 
     [ WHEN ( condition ) ]
     EXECUTE { FUNCTION | PROCEDURE } function_name ( arguments )
 ```
-####где событие (event) может быть одним из следующих:
+Где событие (event) может быть одним из следующих:
 ```sql
     INSERT
     UPDATE [ OF column_name [, ... ] ]
