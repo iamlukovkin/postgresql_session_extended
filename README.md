@@ -3,8 +3,9 @@
 ## Полезные файлы
 - Запрос на создание [базы данных](creating_database/create_database.sql) 
 - Запрос на создание [сущностей](creating_database/create_tables.sql)
+- Запрос на создание [триггеров](triggers_examples/triggers_examples.sql)
 - [Документация](Documentation.docx)
 ## Работы
 1. [Создание базы данных "Сессия"](/creating_database/README.md)
 2. [Создание правил и представлений](rules_defaults_views/README.md)
-3. [Создание триггеров](triggers_examples/README.md)
+3. [Создание триггеров, практическое занятие](triggers_examples/README.md)
