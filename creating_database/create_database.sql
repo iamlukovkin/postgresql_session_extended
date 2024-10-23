@@ -1,2 +1,2 @@
-drop database if exists stud_session;   -- Используется для пересоздания БД
-create database stud_session;           -- Создание БД
+DROP DATABASE IF EXISTS stud_session (FORCE);   -- Используется для пересоздания БД
+CREATE DATABASE stud_session;           -- Создание БД
