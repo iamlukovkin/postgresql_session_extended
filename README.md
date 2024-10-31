@@ -6,6 +6,8 @@
 - Запрос на создание [триггеров](triggers_examples/triggers_examples.sql)
 - [Документация](Documentation.docx)
 ## Работы
+### Основы баз данных, языка SQL и работы с СУБД
 1. [Создание базы данных "Сессия"](/creating_database/README.md)
-2. [Создание правил и представлений](rules_defaults_views/README.md)
-3. [Создание триггеров, практическое занятие](triggers_examples/README.md)
+### Клиент-серверные приложения баз данных
+1. [Создание правил и представлений](rules_defaults_views/README.md)
+2. [Создание триггеров, практическое занятие](triggers_examples/README.md)

@@ -69,7 +69,7 @@ ALTER TABLE students_in_group
         FOREIGN KEY (student)
             REFERENCES student (code)
 ;
-CREATE TABLE session (
+CREATE TABLE session_results (
 	student INT,
 	subject INT,
 	teacher INT,
@@ -78,23 +78,23 @@ CREATE TABLE session (
 	CONSTRAINT pk_session
 	    PRIMARY KEY (student, subject, date_of_exam)
 );
-ALTER TABLE session
+ALTER TABLE session_results
     ADD CONSTRAINT fk_session_to_student
         FOREIGN KEY (student)
             REFERENCES student (code)
 ;
-ALTER TABLE session
+ALTER TABLE session_results
     ADD CONSTRAINT fk_session_to_subject
         FOREIGN KEY (subject)
             REFERENCES subject (code)
 ;
-ALTER TABLE session
+ALTER TABLE session_results
     ADD CONSTRAINT fk_session__to_teacher
         FOREIGN KEY (teacher)
             REFERENCES teacher(code)
 ;
 INSERT INTO student (
-    code, firstname, lastname, surname, birthday, scholarship)
+    code, firstname, surname, lastname, birthday, scholarship)
 VALUES
     (1, 'Тимур', 'Тютючкин', 'Иванович', '2006-05-09', 1600),
     (2, 'Максим', 'Булатов', 'Игоревич', '2003-10-18', 3400),
@@ -142,7 +142,7 @@ VALUES
     (10, 'Кафедра ЭМОП')
 ;
 INSERT INTO teacher(
-    code, firstname, lastname, surname, department, rank, post)
+    code, firstname, surname, lastname, department, rank, post)
 VALUES
     (1, 'Борис', 'Костров', 'Васильевич', 1, 'Профессор', 'Зав. кафедрой'),
     (2, 'Ангелина', 'Вьюгина', 'Алексеевна', 1, 'Доцент', 'Старший преподаватель'),
@@ -217,7 +217,7 @@ VALUES
     (10, '345', '2023-09-01', NULL)
 ;
 
-INSERT INTO session (student, subject, teacher, date_of_exam, mark)
+INSERT INTO session_results (student, subject, teacher, date_of_exam, mark)
 VALUES
     (4, 3, 3, '2023-12-20', 5),
     (5, 3, 3, '2023-12-20', 4),

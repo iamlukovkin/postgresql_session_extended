@@ -67,10 +67,8 @@ EXECUTE PROCEDURE update_end_date_on_class_transfer();
 
 ---Пример применения
 -- Вставка данных о переводе студента в новую группу
-INSERT INTO students_in_group (student, group_id, date_start, date_end)
+INSERT INTO students_in_group (student, group_name, date_start, date_end)
 VALUES (4, 10, '2024-01-01', NULL);
-
-
 
 --- Задание: При получении студентом оценки 3 стипендию установить NULL
 
