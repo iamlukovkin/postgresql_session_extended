@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS short_db_session(FORCE);
+
 CREATE DATABASE short_db_session;
 
 CREATE TABLE student (
